@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>邮箱: </strong>
+  <%= @admin.email %>
+  <strong> 创建成功</strong>
+</p>
+
+<br>
+
+<%= link_to '编辑', edit_admin_path(@admin) %> |
+<%= link_to '返回', admins_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>姓名: </strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>性别: </strong>
+  <%= @user.gender %>
+</p>
+
+<p>
+  <strong>出生日期: </strong>
+  <%= @user.birthday %>
+</p>
+
+<p>
+  <strong>联系方式: </strong>
+  <%= @user.phone %>
+</p>
+
+<p>
+  <strong>邮箱: </strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>公司: </strong>
+  <%= @user.company %>
+</p>
+
+<%= link_to '编辑', edit_user_path(@user) %> |
+<%= link_to '返回', root_path %>
